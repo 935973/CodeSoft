@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const person={name:"ashu",age:22,hobbies:["playing","singing","dancing"]}
+        // console.log(person);
+        // console.log(person.hobbies[2]);
+        // delete person.name
+        // console.log(person["age"]);//other way to access
+        // person.gender="female"
+        // console.log(person);
+        // const person={name:"ashu",age:22,hobbies:["playing","singing","dancing"]}
+        //  for (const key in person) {
+        //     // console.log(person[key]);
+        //     console.log(person);
+        //  }
+        //  console.log(Object.keys(person));
+        //  console.log(Object.values(person));
+        // for (const key of Object.keys(person)) {
+        //     console.log(person[key]);
+            
+        // }
+
+        //speread
+        // let arr1=[1,2,3,4]
+        // let arr2=[8,9,5,0]
+        // let arr3=[..."ashwini",89,..."pink",..."abc"]
+        // console.log(arr3);
+
+        // const obj1={
+        //     "key1":"val1",
+        //     "key2":"val2",
+        //     "key1":"val3"
+
+           
+        // }
+        // const obj2={
+        //     "key3":"val11",
+        //     "key4":"val22",
+        //      }
+        // const obj3={...obj2,...obj1,..."helloworld"}
+        // console.log(obj3);
+
+        //object destructring
+
+        // let band={
+        //     name:"ashu",
+        //     age:22,
+        //     status:"single"
+        // }
+        // let{name,age,...rest}=band;
+        // console.log(name);
+        // console.log(age);
+        // console.log(rest);
+
+
+        // object inside array
+
+        // const array=[
+        //     {
+        //         name:"tanu",
+        //         age:20,
+        //         gender:"female"
+
+        //     },
+        //     {
+        //         name:"kunal",
+        //         age:18,
+        //         gender:"male"
+
+        //     },
+        //     {
+        //         name:"sonu",
+        //         age:25,
+        //         gender:"female"
+
+        //     }
+        //  ]
+
+        // for(let user of array){
+        //     console.log(user.age);
+        // }
+
+        // nested destructuring
+        // let[{name},{age},{gender}]=array
+        // console.log(name);
+        // console.log(gender);
+        // console.log(age);
+
+        //Function--1
+    //  function iseven(num1){
+    //     if(num1%2==0)
+    //     {
+    //         return true;
+    //     }
+      
+    //         return false;
+        
+    //  }
+    // console.log(iseven());
+
+    //function --2
+
+    // function string(str) {
+    //     return str[0];
+        
+    // }
+    // console.log(string("hello"));
+
+    //function--3
+    //  let find=function (array,target){
+    //  for(let i=0;i<array.length;i++)
+    //  {
+    //     if(array[i]===target)
+    //     {
+    //         return i
+    //     }
+        
+    //  }
+    //  return -1
+    // }
+    // let arr1=[1,5,6,9,89]
+    // console.log(find(arr1,9));
+
+
+    //arrow function ---1
+    // let hello=(a,b)=>{
+    //     return a+b
+    // }
+    // console.log(hello(3,5));
+    //----2
+    // let iseven=(num)=>{
+    //     if(num%2===0)
+    //     {
+    //         return true
+    //     }
+    //     return false
+    // }
+    // console.log(iseven(1111));
+
+    // function within another function
+//    function myfun(){
+//     const hello=()=>{
+//     console.log("hello friends");
+//    }
+
+//     const hellofun=()=>{
+//     console.log("my name is");
+//     }
+//     const fun=(fir,mid,last)=>{
+//        return fir+" "+ mid+ " " +last
+//     }
+//     hello()
+//         hellofun();
+//         console.log(fun("ashwini","anil","yedke"));
+// }
+//     myfun();
+
+// lexical scope
+ //spread operator
+
+// function myfyn(a,b,...c) {
+    
+//     console.log(`a is ${a}`);
+//     console.log(`a is ${b}`);
+//     console.log(`a is ${c}`);
+
+// }
+// myfyn(1,2,3,4,5,6,7)
+
+// function addall(...numbers) {
+//     let total=0
+//     for(let number of numbers)
+//     {
+//         total=total+number
+//     }
+//     return total
+    
+// }
+// let answer=addall(1,2,3,4,5,6,7,8,9,10);
+// console.log(answer);
+
+//parameter destructring
+// const person={
+//     firstName:"ashu",
+//     age:22
+// }
+// function printdeatil({firstName,age}){
+//     console.log(firstName);
+//     console.log(age);
+
+// }
+// printdeatil(person)
+
+
+//callback function
+// function myfunc2(name){
+//     console.log(`this is myfunction 11 ${name}`);
+//  }
+//  function myfunc1(callback){
+//     console.log("this is fuction 22");
+//     callback("ashu");
+//  }
+//  myfunc1(myfunc2)
+
+
+// Function returning function
+    </script>
+    
+</body>
+</html>
